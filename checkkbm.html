@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Проверить по правам КБМ для ОСАГО по базе АИС РСА. Гарантия возврата денег, в случае если коэффициент не снижен." />
+    <title>Проверить КБМ онлайн по ОСАГО в базе РСА</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.8.0/dist/css/suggestions.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="content-top">
+        <!--header-top-->
+        <div class="header-top">
+            <div class="container header-top__wrap">
+
+                <div class="logo"><a href="index.html" class="logo__text">кбм24<span>.рф</span></a>
+                    <span class="logo__tizer">Официальный возврат скидки для ОСАГО в АИС РСА</span>
+                </div>
+
+                <div class="menu-btn header-top-btn1">
+                    <span class="menu-btn__text">Меню</span>
+                    <a href="#" class="menu-btn-burger">
+                        <span class="burger-line line__main"></span>
+                        <span class="burger-line line__middle"></span>
+                        <span class="burger-line line__main"></span>
+                    </a>
+                </div>
+
+                <div class="menu-btn-block menu-btn-block--js2">
+                    <nav>
+                        <ul>
+                            <li class="menu-btn__link--menu">Меню <span class="menu-btn__cross"></span></li>
+                            <li><a href="eosago.html" class="menu-btn__link">Е-ОСАГО</a></li>
+                            <li><a href="reviews.html" class="menu-btn__link">Отзывы</a></li>
+                            <li><a href="#calc-guarantee" class="menu-btn__link">Гарантии</a></li>
+                            <li><a href="index.html#faq" class="menu-btn__link">Вопросы-ответ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-btn btn2">
+                    <span class="menu-btn__text">Меню</span>
+                    <a href="#" class="menu-btn-burger">
+                        <span class="burger-line line__main"></span>
+                        <span class="burger-line line__middle"></span>
+                        <span class="burger-line line__main"></span>
+                    </a>
+                </div>
+
+                <div class="header-top-info">
+                    <span class="logo__tizer--media">Официальный возврат скидки для ОСАГО в АИС РСА</span>
+                    <span class="header-top-info__item header-top-info__sch">Сервис работает 24/7</span>
+                    <a href="mailto:help@кбм24.рф" class="header-top-info__item header-top-info__email header-menu__link--btn2">help@кбм24.рф</a>
+                    <a href="tel:+78001234567" class="header-top-info__item header-top-info__tel header-menu__link--btn2">8 (800) 123 45 67</a>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <nav class="header-top-fixed-menu">
+                    <ul class="header-menu">
+                        <li><a href="index.html" class="header-menu__link header-menu__link--main header-menu__link--btn2">Восстановить КБМ</a></li>
+                        <li><a href="checkkbm.html" class="header-menu__link header-menu__link--main header-menu__link--btn2 active">Проверить КБМ</a></li>
+                        <li><a href="#work" class="header-menu__link header-menu__link--main header-menu__link--btn2">Как восстановить КБМ</a></li>
+                        <li><a href="eosago.html" class="header-menu__link header-menu__link--main header-menu__link--btn">Е-ОСАГО</a></li>
+                        <li><a href="reviews.html" class="header-menu__link header-menu__link--btn">Отзывы</a></li>
+                        <li><a href="#calc-guarantee" class="header-menu__link header-menu__link--btn">Гарантии</a></li>
+                        <li><a href="index.html#faq" class="header-menu__link header-menu__link--btn">Вопросы-ответ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--end header-top-->
+
+        <!--header-->
+        <header class="header">
+            <div class="container header__wrap">
+
+                <nav>
+                    <ul class="header-menu">
+                        <li><a href="index.html" class="header-menu__link header-menu__link--main header-menu__link--btn2">Восстановить КБМ</a></li>
+                        <li><a href="checkkbm.html" class="header-menu__link header-menu__link--main header-menu__link--btn2  active">Проверить КБМ</a></li>
+                        <li><a href="#work" class="header-menu__link header-menu__link--main header-menu__link--btn2">Как восстановить КБМ</a></li>
+                        <li><a href="eosago.html" class="header-menu__link header-menu__link--main header-menu__link--btn">Е-ОСАГО</a></li>
+                        <li><a href="reviews.html" class="header-menu__link header-menu__link--btn">Отзывы</a></li>
+                        <li><a href="#calc-guarantee" class="header-menu__link header-menu__link--btn">Гарантии</a></li>
+                        <li><a href="index.html#faq" class="header-menu__link header-menu__link--btn">Вопросы-ответ</a></li>
+                    </ul>
+                </nav>
+
+                <div class="menu-btn btn1">
+                    <span class="menu-btn__text">Меню</span>
+                    <a href="#" class="menu-btn-burger">
+                        <span class="burger-line line__main"></span>
+                        <span class="burger-line line__middle"></span>
+                        <span class="burger-line line__main"></span>
+                    </a>
+                </div>
+
+                <div class="menu-btn-block">
+                    <nav>
+                        <ul>
+                            <li class="menu-btn__link--menu">Меню <span class="menu-btn__cross"></span></li>
+                            <li><a href="eosago.html" class="menu-btn__link">Е-ОСАГО</a></li>
+                            <li><a href="reviews.html" class="menu-btn__link">Отзывы</a></li>
+                            <li><a href="#calc-guarantee" class="menu-btn__link">Гарантии</a></li>
+                            <li><a href="#faq" class="menu-btn__link">Вопросы-ответ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-content">
+                    <h1 class="header-content__title">Проверить КБМ для ОСАГО по базе РСА</h1>
+                </div>
+
+            </div>
+        </header>
+        <!--end header-->
+
+        <!--mobile menu-->
+        <div class="menu-btn-block2">
+            <div class="menu-btn-block2__wrap">
+                <nav>
+                    <ul>
+                        <li><a href="tel:+78001234567" class="header-top-info__item header-top-info__tel menu-btn__link--top">8 (800) 123 45 67</a><span class="menu-btn__cross2"></span></li>
+                        <li class="menu-btn__item"><a href="mailto:help@кбм24.рф" class="header-top-info__item header-top-info__email menu-btn__link--top">help@кбм24.рф</a></li>
+                        <li><a href="index.html" class="header-menu__link header-menu__link--main menu-btn__link2">Восстановить КБМ</a></li>
+                        <li><a href="checkkbm.html" class="header-menu__link header-menu__link--main menu-btn__link2">Проверить КБМ</a></li>
+                        <li><a href="#work" class="header-menu__link header-menu__link--main menu-btn__link2">Как восстановить КБМ</a></li>
+                        <li><a href="eosago.html" class="header-menu__link header-menu__link--main menu-btn__link2">Е-ОСАГО</a></li>
+                        <li><a href="reviews.html" class="header-menu__link menu-btn__link2">Отзывы</a></li>
+                        <li><a href="#calc-guarantee" class="header-menu__link menu-btn__link2">Гарантии</a></li>
+                        <li><a href="index.html#faq" class="header-menu__link menu-btn__link2">Вопросы-ответ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <span class="menu-btn__service">Сервис работает 24/7</span>
+        </div>
+        <!--end mobile menu-->
+
+        <!--form-->
+        <section class="form">
+            <!--<div class="container">-->
+
+            <div class="form__wrap">
+                <div id="form-check" class="form-content">
+                    <h2 class="form__title"><span>Проверьте свой КБМ</span> по АИС РСА:</h2>
+
+                    <form action="#" method="post" class="form-check">
+                        <div class="form-check-item">
+                            <input id="surname" type="text" name="surname" class="form-check__input" placeholder="Фамилия:" required minlength="2">
+                        </div>
+                        <div class="form-check-item form-check-item--name">
+                            <input id="name" type="text" name="name" class="form-check__input" placeholder="Имя:" required minlength="2">
+                        </div>
+                        <div class="form-check-item form-check-item--patron">
+                            <input id="patron" type="text" name="patron" class="form-check__input" placeholder="Отчество:" required minlength="2">
+                        </div>
+                        <div class="form-check-item form-check-item--birth">
+                            <label class="form-check__label form-check__subcaption form-check__subcaption--birth" for="datepicker">(05.10.1980):</label>
+                            <input id="datepicker" type="text" name="birth" class="form-check__input" placeholder="Дата рождения" required minlength="10">
+                        </div>
+                        <br>
+                        <div class="form-check-item form-check-item--license">
+                            <span class="form-check__caption">Водительское удостоверение:</span>
+                            <span class="form-check__subcaption">Пр.: 23УВ 234534. Буквы русские</span>
+                        </div>
+                        <div class="form-check-item form-check-item--seria">
+                            <input id="seria" type="text" name="seria" class="form-check__input" placeholder="Серия:" required minlength="4" maxlength="4">
+                        </div>
+                        <div class="form-check-item form-check-item--number">
+                            <input id="number" type="text" name="number" class="form-check__input form-check__input--number" placeholder="Номер:" required minlength="6" maxlength="6">
+                        </div>
+                        <button type="reset" class="form-check__btn-reset">Очистить данные</button>
+                        <button type="submit" class="form-check__btn form-check__btn--js">Проверить КБМ</button>
+                        <div class="form-check-item--width form-check-item--js">
+                            <span class="form-check__caption">Проверка бесплатная.</span>
+                            <span class="form-check__subcaption">Восстановление КБМ стоит 530 рублей</span>
+                        </div>
+                    </form>
+
+                    <span class="form__policy">Нажимая кнопку, я принимаю пользовательское соглашение и подтверждаю, что ознакомлен и согласен с политикой конфиденциальности данного сайта.</span>
+
+                    <p class="form-result__bold form-result--js">Ваш текущий КБМ — <span class="form-result__result"></span></p>
+                    <div class="form-result kbm1">
+                        <p><span class="form-result__semibold">У вас совсем нет скидки!</span> Такой КБМ получают новички. Если у вас стаж больше года, нужно восстановить КБМ. Нажимайте кнопку ниже ↓</p>
+                        <a href="#form-order" class="form-check__btn form-result__btn form-result-btn--js">Восстановить КБМ</a>
+                        <a href="eosago.html" class="form-result__btn2">Рассчитать и оформить Е-ОСАГО с данным КБМ</a>
+                    </div>
+                    <div class="form-result kbm2">
+                        <p class="calc-result__bold">Внимание!</p>
+                        <p>Это всего 5% скидка на полис ОСАГО и соответствует стажу 1 год. Если ваш стаж больше, нажимайте кнопку ниже.</p>
+                        <a href="#form-order" class="calc-result-btn form-result-btn--js">Восстановить КБМ</a>
+                    </div>
+                    <div class="form-result kbm3">
+                        <p class="calc-result__bold">Поздравляем!</p>
+                        <p>Ваша скидка соответствует стажу, вы не переплачиваете за полис ОСАГО.</p>
+                        <a href="eosago.html" class="calc-result-btn">Оформить ОСАГО с текущим КБМ</a>
+                    </div>
+                </div>
+
+                <div id="form-order" class="form-content form-content--order">
+                    <h2 class="form__title"><span>Заявка на снижение КБМ:</span></h2>
+
+                    <form action="#" method="post" class="form-order">
+                        <div class="form-check-item form-check-item--contacts">
+                            <p class="form-order-item__title">Контакты:</p>
+                            <p class="form-order-item__subtitle">Отправим чек и уведомления о статусе заказа</p>
+                        </div>
+
+                        <div class="form-check-item">
+                            <input type="text" name="text" class="form-check__input form-check__input--tel" placeholder="Телефон:" required >
+                        </div>
+
+                        <div class="form-check-item form-check-item--email">
+                            <input type="text" name="email" class="form-check__input" placeholder="E-mail:" required autocomplete="email">
+                        </div>
+
+                        <div class="form-check-item form-order-item--license">
+                            <p class="form-order-item__title">Меняли права?</p>
+                        </div>
+                        <div class="form-check-item form-order-item--license form-order-item--margin">
+                            <a href="#" class="form-order-item__link link-license link-license--yes">Да</a>
+                            <a href="#" class="form-order-item__link link-license active">Нет</a>
+                        </div>
+
+                        <div class="item-license">
+                            <div class="form-check-item form-check-item--license">
+                                <span class="form-check__caption">Ваши старые права:</span>
+                                <span class="form-check__subcaption">Пр.: 23УВ 234534. Буквы русские</span>
+                            </div>
+                            <div class="form-check-item form-check-item--seria">
+                                <input type="text" name="seria" class="form-check__input" placeholder="Серия:" required minlength="4">
+                            </div>
+                            <div class="form-check-item form-check-item--number">
+                                <input type="text" name="number2" class="form-check__input" placeholder="Номер:" required minlength="6" maxlength="6">
+                            </div>
+                        </div>
+
+                        <div class="form-check-item--vu">
+                            <input id="vu" type="checkbox" name="vu" class="form-check__checkbox">
+                            <label class="form-check__label form-check__caption form-order__vu" for="vu">Запросить предыдущее в/у в ГИБДД, <span class="form-order-item__subtitle">если нет данных по старым правам.</span> +100 руб.</label>
+                            <span class="form-order-item__subtitle">Поиск страховой истории будет осуществлен с учётом предыдущего в/у, но сам номер в/у отображаться не будет</span>
+                        </div>
+
+                        <div class="form-check-item form-order-item--sur">
+                            <p class="form-order-item__title">Меняли фамилию?</p>
+                        </div>
+                        <div class="form-check-item form-order-item--sur form-order-item--margin">
+                            <a href="#" class="form-order-item__link link-surname link-surname--yes">Да</a>
+                            <a href="#" class="form-order-item__link active link-surname">Нет</a>
+                        </div>
+                        <div class="form-check-item form-order-item--surname">
+                            <input id="surname2" type="text" name="surname2" class="form-check__input" placeholder="Фамилия:" required minlength="2">
+                        </div>
+
+                        <button type="submit" class="form-check__btn form-order__btn">Перейти к оплате</button>
+                        <div class="form-check-item form-check-item--cost">
+                            <span class="form-check__caption">Стоимость услуги — <span class="cost">530</span> рублей</span>
+                            <span class="form-order-item__subtitle">Гарантия автоматического возврата денег, если КБМ не снизится</span>
+                        </div>
+                        <div class="form-check-item--pay">
+                            <span class="form-check-item-pay__item form-check-item-pay__item--visa"></span>
+                            <span class="form-check-item-pay__item form-check-item-pay__item--mc"></span>
+                            <span class="form-check-item-pay__item form-check-item-pay__item--mir"></span>
+                        </div>
+                    </form>
+
+                    <span class="form__policy form__policy2">Нажимая кнопку, я принимаю пользовательское соглашение и подтверждаю, что ознакомлен и согласен с политикой конфиденциальности данного сайта.</span>
+
+                    <div class="form-faq">
+                        <div class="form-faq__wrap">
+                            <a href="#first" class="form-faq__quest">Что будет после оплаты?</a>
+                            <div class="form-faq-answers__item form-faq-answers__item--mob mob-1">
+                                <ul class="form-faq__wrap">
+                                    <li class="form-faq-answers__first form-faq-answers__subitem"><span class="form-faq__bold">Вы получите </span>кассовый чек</li>
+                                    <li class="form-faq-answers__subitem"><span class="form-faq__bold">На почту придёт </span>уведомление об оплате + номер заказа</li>
+                                </ul>
+                            </div>
+                            <a href="#second" class="form-faq__quest">Как вернутся деньги, если КБМ не снизится</a>
+                            <p class="form-faq-answers__item form-faq-answers__item--mob mob-2"><span class="form-faq__bold">Возврат происходит автоматически как только вы получите уведомление о том, что КБМ не снижен. </span>Так же вы получите чек возврата.</p>
+                        </div>
+                        <div class="form-faq__wrap form-faq-answers">
+                            <div id="first" class="form-faq-answers__item">
+                                <ul class="form-faq__wrap">
+                                    <li class="form-faq-answers__first form-faq-answers__subitem"><span class="form-faq__bold">Вы получите </span>кассовый чек</li>
+                                    <li class="form-faq-answers__subitem"><span class="form-faq__bold">На почту придёт </span>уведомление об оплате + номер заказа</li>
+                                </ul>
+                            </div>
+                            <p id="second" class="form-faq-answers__item"><span class="form-faq__bold">Возврат происходит автоматически как только вы получите уведомление о том, что КБМ не снижен. </span>Так же вы получите чек возврата.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-action"><span class="form-action__span"><span class="form-action__bigspan">Акция!</span> В качестве подарка мы отправим вам на почту подробную инструкцию и бланки для возврата переплат по ОСАГО за 3 года.</span></div>
+
+                <div class="form-soc">
+                    <a href="#" class="form-soc__link form-soc__link--fb"><span class="visually-hidden">facebook</span></a>
+                    <a href="#" class="form-soc__link form-soc__link--vk"><span class="visually-hidden">vkontakte</span></a>
+                    <a href="#" class="form-soc__link form-soc__link--ok"><span class="visually-hidden">одноклассники</span></a>
+                    <a href="#" class="form-soc__link form-soc__link--tw"><span class="visually-hidden">twitter</span></a>
+                    <a href="#" class="form-soc__link form-soc__link--vb"><span class="visually-hidden">viber</span></a>
+                    <a href="#" class="form-soc__link form-soc__link--wt"><span class="visually-hidden">watsapp</span></a>
+                </div>
+            </div>
+
+            <!--</div>-->
+        </section>
+        <!--end form-->
+
+        <!--work-->
+        <section id="work" class="work">
+            <div class="container">
+
+                <h2 class="title">Как мы работаем</h2>
+
+                <div class="work-block">
+                    <div class="work-block-item work-block-item1">
+                        <h3 class="work-block-item__title">Заполняете форму&nbsp;<a href="#" class="work-block-item__link">заявки</a></h3>
+                    </div>
+                    <div class="work-block-item work-block-item2">
+                        <h3 class="work-block-item__title">Производите<br> оплату</h3>
+                        <p class="work-block-item__text">Вам приходит смс-оповещение о том, что оплата поступила и заказ находится в обработке</p>
+                    </div>
+                    <div class="work-block-item work-block-item3">
+                        <h3 class="work-block-item__title">Мы формируем официальное заявление РСА</h3>
+                        <p class="work-block-item__text">(Рассмотрение заявки в РСА 2-3 дня, но как правило ответ приходит уже на следующее утро</p>
+                    </div>
+                    <div class="work-block-item work-block-item4">
+                        <h3 class="work-block-item__title">Вам приходит СМС на почту что КБМ изменен</h3>
+                        <p class="work-block-item__text">В случае если КБМ не снизится деньги автоматически возвращаются вам на карту </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--end work-->
+
+        <!--lost-->
+        <section class="lost">
+            <div class="container">
+
+                <h2 class="title">Почему потеряна скидка КБМ</h2>
+
+                <div class="lost-block">
+
+                    <div class="lost-block-item post-1">
+                        <div class="wrap">
+                            <div class="lost-block-item__content">
+                                <p class="lost-block-item__title">Замена водительских прав, </p>
+                                <p class="lost-block-item__subtitle">с истечением их срока действия</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lost-block-item post-1"></div>
+                    <div class="lost-block-item post-2">
+                        <p class="lost-block-item__subtitle">Клиент не заключал договор страхования</p>
+                        <p class="lost-block-item__title">более 1 года</p>
+                    </div>
+                    <div class="lost-block-item post-3">
+                        <div class="lost-block-item__wrap">
+                            <p class="lost-block-item__title">Несколько полисов</p>
+                            <p class="lost-block-item__subtitle">в разных страховых компаниях</p>
+                        </div>
+                    </div>
+                    <div class="lost-block-item post-1"></div>
+                    <div class="lost-block-item post-1"></div>
+                    <div class="lost-block-item post-2"></div>
+                    <div class="lost-block-item post-3"></div>
+                    <div class="lost-block-item post-4">
+                        <p class="lost-block-item__title">Ошибка в бланке</p>
+                        <p class="lost-block-item__subtitle">Е-ОСАГО</p>
+                    </div>
+                    <div class="lost-block-item post-5">
+                        <div class="lost-block-item__content">
+                            <p class="lost-block-item__title">Ваши данные не&nbsp;отправлены в РСА </p>
+                            <p class="lost-block-item__subtitle">страховой компанией</p>
+                        </div>
+                    </div>
+                    <div class="lost-block-item post-5"></div>
+                    <div class="lost-block-item post-3"></div>
+                    <div class="lost-block-item post-none"></div>
+                    <div class="lost-block-item post-5"></div>
+                    <div class="lost-block-item post-5"></div>
+                    <div class="lost-block-item post-none"></div>
+                </div>
+
+            </div>
+        </section>
+        <!--end lost-->
+
+        <!--example-->
+        <section class="example">
+            <div class="example-bg"></div>
+
+            <div class="example-content">
+                <h2 class="title title--white title--left">Пример экономии ОСАГО</h2>
+                <p class="subtitle">Водитель имея автомобиль оформляет ОСАГО с действующей скидкой КБМ равной 1, полис будет стоить 10500 руб. <span class="subtitle__light">Снизив коэффициент КБМ до 0.5 стоимость упадет ровно в 2 раза и обойдется всего в 5250 руб. Приятно не правда ли?</span></p>
+                <a href="#form-check" class="check-btn">Проверить свою скидку КБМ</a>
+            </div>
+
+        </section>
+        <!--end example-->
+
+        <!--calc-->
+        <section class="calc">
+
+            <div class="calc-content">
+                <div class="container">
+
+                    <h2 class="title">Узнайте не переплачиваете ли вы за полис ОСАГО</h2>
+
+                    <div class="calc-block">
+                        <div class="calc-block-left">
+                            <h3 class="calc__title">Ваш стаж <span>(полных лет)</span>:</h3>
+                            <div id="range"></div>
+                        </div>
+                        <div class="calc-block-right">
+                            <div class="calc-block-right-title">
+                                <h3 class="calc__title">Текущий класс водителя <span>(КБМ)</span>:</h3>
+                                <a href="#form-order" class="calc__link">Узнать КБМ бесплатно</a>
+                            </div>
+                            <div id="driver"></div>
+                            <div id="driver-lower" class="noUi-tooltip"></div>
+                        </div>
+                    </div>
+
+                    <div class="calc-block-mob">
+                        <div class="calc-block-mob-item">
+                            <h3 class="calc__title">Ваш стаж <span>(полных лет)</span>:</h3>
+                            <div class="calc-block-mob-links">
+                                <a href="#" class="calc-block-mob-links__item active calc-link1" data-val="1">1</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="2">2</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="3">3</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="4">4</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="5">5</a>
+                            </div>
+                            <div class="calc-block-mob-links">
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="6">6</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="7">7</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="8">8</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="9">9</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link1" data-val="10">10</a>
+                            </div>
+                        </div>
+                        <div class="calc-block-mob-item">
+                            <h3 class="calc__title">Текущий класс водителя <span>(КБМ)</span>:</h3>
+                            <div class="calc-block-mob-links">
+                                <a href="#" class="calc-block-mob-links__item active calc-link2" data-val="2.45">2.45</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="2.3">2.3</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="1.55">1.55</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="1.4">1.4</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="1.0">1.0</a>
+                            </div>
+                            <div class="calc-block-mob-links">
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.95">0.95</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.9">0.9</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.85">0.85</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.8">0.8</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.75">0.75</a>
+                            </div>
+                            <div class="calc-block-mob-links">
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.70">0.70</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.65">0.65</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.6">0.6</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.55">0.55</a>
+                                <a href="#" class="calc-block-mob-links__item calc-link2" data-val="0.5">0.5</a>
+                            </div>
+                            <span class="calc__link">Узнать КБМ бесплатно</span>
+                        </div>
+                    </div>
+
+                    <p class="calc-warning calc-warning2"><span>Если у вас было ДТП.</span> Конечный результат может отличаться в зависимости от наличия ДТП во всей страховой истории. <a href="#" class="calc-warning__link">Подробнее о расчете КБМ</a></p>
+
+                    <div class="calc-result result2">
+                        <p class="calc-result__bold">Поздравляем!</p>
+                        <p>Скидка на ОСАГО больше чем вам полагается по текущему стажу и КБМ.</p>
+                        <a href="eoasago.html" class="calc-result-btn">Оформить ОСАГО с текущим КБМ</a>
+                    </div>
+                    <div class="calc-result result1">
+                        <p class="calc-result__bold">Внимание! Вы переплачиваете за полис ОСАГО на <span class="skidka">10</span>% больше, чем следует!</p>
+                        <p>Например, при базовой стоимости полиса в 6200 рублей, ваша цена должна быть <span class="stoimost">3720</span> руб. <span class="calc-result__semibold">Экономия составляет <span class="summa">2480</span> рублей.</span></p>
+                        <a href="#form-order" class="calc-result-btn">Восстановить КБМ</a>
+                    </div>
+                    <div class="calc-result result3">
+                        <p class="calc-result__bold">Поздравляем!</p>
+                        <p>Ваша скидка соответствует стажу, вы не переплачиваете за полис ОСАГО.</p>
+                        <a href="eosago.html" class="calc-result-btn">Оформить ОСАГО с текущим КБМ</a>
+                    </div>
+
+                    <div class="calc-bg"></div>
+                    <div id="calc-guarantee" class="calc-guarantee">
+                        <div class="calc-guarantee__wrap">
+                            <h2 class="title title--white title--left">Наши гарантии возврата денег</h2>
+                            <p class="subtitle">Прежде всего наш онлайн-сервис заинтересован в том, что бы вернуть вам скидку для ОСАГО в кратчайшие сроки. <span class="subtitle__light">В противном случае если КБМ не&nbsp; изменится деньги автоматически будут возвращены вам на карту</span></p>
+                            <a href="#form-check" class="check-btn calc-btn">Проверить свою скидку КБМ</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!--end calc-->
+
+        <!--seo-->
+        <section class="seo">
+            <div class="container">
+
+                <div class="seo__wrap">
+                    <h2 class="title seo__title">Заголовок СЕО текста</h2>
+
+                    <p class="seo__text">
+                        Аббревиатура КБМ расшифровывается как коэффициент &laquo;Бонус-малус&raquo; от&nbsp;него зависит какая, будет скидка при оформлении полиса ОСАГО. Значение КБМ зависит от&nbsp;стажа и&nbsp;аккуратности вождения водителя. Наш сервис подключен к&nbsp;системе и&nbsp;генерирует с&nbsp;базой, тем самым вы&nbsp;можете проверить КБМ онлайн по&nbsp;базе РСА не&nbsp;выходя из&nbsp;дома за&nbsp;2&nbsp;минуты. Теперь нет необходимости посещать офисы страховых компаний, и&nbsp;слушать истории агентов, почему стоимость вашей страховки увеличивается с&nbsp;каждым годом, проверка кбм осуществляется в&nbsp;режиме онлайн.</p>
+                    <p class="seo__text seo__text--bold">Показатель КБМ может обнулить две самые серьезные причины:</p>
+                    <ul class="seo-list seo__text">
+                        <li class="seo-list__item">Отсутствия страхового полиса в&nbsp;течении одного года;</li>
+                        <li class="seo-list__item">ДТП с&nbsp;выплатой по&nbsp;вашей вине;</li>
+                    </ul>
+                    <p class="seo__text">Очень часто бывают сбои в&nbsp;автоматизированной информационной системе РСА, коэффициенты слетают с&nbsp;базы, поэтому рекомендуем использовать наш сайт проверки кбм, и&nbsp;быть в&nbsp;курсе всех изменений.</p>
+                    <p class="seo__text">Максимальная скидка цены на&nbsp;ОСАГО составляет&nbsp;50% при КБМ равному 0.5, в&nbsp;обратном случае самый высокий показатель это 2.45 вам придется переплатить за&nbsp;полис больше чем на&nbsp;200%, при этом страховая компания по&nbsp;законодательству&nbsp;РФ обязана использовать сведения о&nbsp;предыдущих периодах страхования и&nbsp;учитывать ваш текущий КБМ.</p>
+                    <p class="seo__text">Мы&nbsp;работаем круглосуточно без выходных и&nbsp;перерывов, с&nbsp;радостью поможем вам и&nbsp;ответим на&nbsp;все интересующие вопросы. Сохранность персональных данных гарантируется нашей компанией.</p>
+                </div>
+
+            </div>
+        </section>
+        <!--end seo-->
+
+        <!--advantages-->
+        <section class="advantages">
+            <div class="container">
+
+                <h2 class="title">Преимущества</h2>
+
+                <div class="advantages-block">
+
+                    <div class="advantages-block-item item-1">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content--goriz">
+                                <p class="advantages-block-item__title">Быстро, надежно </p>
+                                <p class="advantages-block-item__subtitle">и без очередей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-1"></div>
+                    <div class="advantages-block-item item-2">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content">
+                                <span class="advantages-block-item__title">Гарантия возврата денег </span>
+                                <span class="advantages-block-item__subtitle">если КБМ не изменится</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-3">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content">
+                                <span class="advantages-block-item__title">Официальные данные </span>
+                                <span class="advantages-block-item__subtitle">АИС РСА</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-1"></div>
+                    <div class="advantages-block-item item-1"></div>
+                    <div class="advantages-block-item item-2"></div>
+                    <div class="advantages-block-item item-3"></div>
+                    <div class="advantages-block-item item-4">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content">
+                                <span class="advantages-block-item__title">Гарантия защиты данных </span>
+                                <span class="advantages-block-item__subtitle">при оплате</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-5">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content">
+                                <span class="advantages-block-item__title">Не нужно ездить </span>
+                                <span class="advantages-block-item__subtitle">в РСА</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-2"></div>
+                    <div class="advantages-block-item item-6">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content">
+                                <span class="advantages-block-item__title">ТОП-5 компаний </span>
+                                <span class="advantages-block-item__subtitle">в страховании</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-4"></div>
+                    <div class="advantages-block-item item-5"></div>
+                    <div class="advantages-block-item item-2"></div>
+                    <div class="advantages-block-item item-6"></div>
+                    <div class="advantages-block-item item-7">
+                        <span class="advantages-block-item__title">5 лет </span>
+                        <span class="advantages-block-item__subtitle">на рынке</span>
+                    </div>
+                    <div class="advantages-block-item item-8">
+                        <div class="advantages-block-item__wrap">
+                            <div class="advantages-block-item__content--goriz">
+                                <p class="advantages-block-item__title">Круглосуточная работа 24/7</p>
+                                <span class="advantages-block-item__title advantages-block-item__title--mob">24/7</span>
+                                <p class="advantages-block-item__subtitle">без выходных и перерывов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages-block-item item-8"></div>
+                    <div class="advantages-block-item item-6"></div>
+                    <div class="advantages-block-item post-none"></div>
+                    <div class="advantages-block-item item-8"></div>
+                    <div class="advantages-block-item item-8"></div>
+                    <div class="advantages-block-item post-none"></div>
+                </div>
+
+            </div>
+        </section>
+        <!--end advantages-->
+
+        <!--partners-->
+        <section class="partners">
+            <div class="container partners__wrap">
+
+                <h2 class="title partners__title">Наши партнеры</h2>
+
+                <div class="partners-slider">
+                    <div class="partners-slider__wrap">
+                        <div class="partners-slider__item slide1">
+                            <img src="img/sogaz.png" alt="СОГАЗ">
+                        </div>
+                        <div class="partners-slider__item slide2">
+                            <img src="img/alfa.png" alt="Альфа страхование">
+                        </div>
+                        <div class="partners-slider__item slide3">
+                            <img src="img/soglasie.png" alt="СОГЛАСИЕ">
+                        </div>
+                        <div class="partners-slider__item slide4">
+                            <img src="img/renessanse.png" alt="Ренессанас">
+                        </div>
+                        <div class="partners-slider__item slide5">
+                            <img src="img/vtb.png" alt="ВТБ">
+                        </div>
+                        <div class="partners-slider__item slide6">
+                            <img src="img/ingosstrah.png" alt="Ингосстрах">
+                        </div>
+                        <div class="partners-slider__item slide7">
+                            <img src="img/tinkoff.png" alt="Тинькофф">
+                        </div>
+                        <div class="partners-slider__item slide8">
+                            <img src="img/rsa.png" alt="РСА">
+                        </div>
+                        <div class="partners-slider__item slide9">
+                            <img src="img/reso.png" alt="РЕСО">
+                        </div>
+                        <div class="partners-slider__item slide10">
+                            <img src="img/vsk.png" alt="ВСК">
+                        </div>
+                        <div class="partners-slider__item slide11">
+                            <img src="img/rosgosstrah.png" alt="Росгосстрах">
+                        </div>
+                    </div>
+                    <div class="partners-slider__arrows"></div>
+                </div>
+
+            </div>
+        </section>
+        <!--end partners-->
+
+        <!--check kbm-->
+        <div class="check-kbm">
+            <div class="container">
+                <a href="#form-check" class="check-kbm__btn">Проверить КБМ бесплатно</a>
+            </div>
+        </div>
+        <!--end check kbm-->
+    </div>
+
+
+    <!--footer-->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container footer-top__wrap">
+
+                <div class="logo footer-logo">
+                    <div class="container-footer">
+                        <a href="index.html" class="logo__text">кбм24.рф</a>
+                        <span class="logo__tizer">Официальный возврат скидки для ОСАГО в АИС РСА</span>
+                    </div>
+                </div>
+                <div class="footer-top-menu-block">
+                    <div class="container-footer">
+                        <ul class="footer-top-menu">
+                            <li><a href="checkkbm.html" class="footer-top-menu__link">Проверить КБМ</a></li>
+                            <li><a href="contacts.html" class="footer-top-menu__link">Контакты</a></li>
+                        </ul>
+                        <ul class="footer-top-privacy">
+                            <li><a href="soglashenie.pdf" class="footer-top-privacy__link" target="_blank">Пользовательское соглашение</a></li>
+                            <li><a href="politika.pdf" class="footer-top-privacy__link footer-top-privacy__policy" target="_blank">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-footer container-footer--contacts">
+                    <ul class="footer-top-contacts">
+                        <li><a href="tel:+78001234567" class="footer-top-contacts__link footer-top-contacts__link--tel">8 (800) 123 45 67</a></li>
+                        <li><a href="mailto:help@кбм24.рф" class="footer-top-contacts__link footer-top-contacts__link--email">help@кбм24.рф</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container container-footer">
+                &copy; 2012-2019 САЙТ. Все права защищены. Использование материалов с данного сайта запрещено без разрешения администрации.
+            </div>
+        </div>
+
+
+    </footer>
+    <!--end footer-->
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@19.8.0/dist/js/jquery.suggestions.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
